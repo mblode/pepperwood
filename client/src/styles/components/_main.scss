@@ -1,0 +1,19 @@
+/* Main */
+
+.main {
+    height: 100%;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+@media (min-width: 767px) {
+    .main {
+        padding-top: 88px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        padding-bottom: 89px;
+    }
+}

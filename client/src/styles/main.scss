@@ -1,0 +1,15 @@
+// Variable overrides
+@import './base/custom.scss';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap.scss';
+
+// Components
+@import './components/auth.scss';
+@import './components/footer.scss';
+@import './components/main.scss';
+@import './components/primary-nav.scss';
+@import './components/reports.scss';
+@import './components/schedules.scss';
+@import './components/sidebar.scss';
+

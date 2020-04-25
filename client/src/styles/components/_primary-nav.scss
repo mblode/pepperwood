@@ -1,0 +1,24 @@
+/* Primary Nav */
+
+@media (min-width: 767px) {
+    .navbar {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1020;
+    }
+}
+
+.navbar-nav {
+    flex-direction: row !important;
+}
+
+.nav-item {
+    margin-left: 8px;
+}
+
+.navbar-nav .dropdown-menu {
+    position: absolute !important;
+    float: left !important;
+}

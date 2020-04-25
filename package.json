@@ -1,0 +1,43 @@
+{
+    "name": "pepperwood-server",
+    "version": "1.0.0",
+    "private": true,
+    "main": "index.js",
+    "scripts": {
+        "start": "node ./server/index.js",
+        "dev": "nodemon ./server/index.js",
+        "watch": "npm run dev",
+        "stop": "lsof -ti :3000 | xargs kill",
+        "heroku-postbuild": "cd client && npm install && npm run build"
+    },
+    "cacheDirectories": [
+        "node_modules",
+        "client/node_modules"
+    ],
+    "license": "MIT",
+    "dependencies": {
+        "body-parser": "1.19.0",
+        "cors": "^2.8.5",
+        "dotenv": "^8.2.0",
+        "errorhandler": "^1.5.1",
+        "express": "4.17.1",
+        "express-jwt": "^5.3.1",
+        "express-session": "^1.17.0",
+        "jsonwebtoken": "^8.5.1",
+        "method-override": "3.0.0",
+        "methods": "1.1.2",
+        "morgan": "1.9.1",
+        "passport": "^0.4.1",
+        "passport-local": "^1.0.0",
+        "pg": "^8.0.3",
+        "request": "2.88.2",
+        "slug": "2.1.1",
+        "validator": "^13.0.0"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.2"
+    },
+    "engines": {
+        "node": "13.x"
+    }
+}
